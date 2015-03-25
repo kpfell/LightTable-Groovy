@@ -13,7 +13,7 @@ class ScriptExecutor {
 
         def encoding = 'UTF-8'
         def stream = new ByteArrayOutputStream()
-        def printStream = new PrintStream(stream, true, 'UTF-8')
+        def printStream = new PrintStream(stream, true, encoding)
 
         def stacktrace = new StringWriter()
         def errWriter = new PrintWriter(stacktrace)
